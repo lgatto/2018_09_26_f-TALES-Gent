@@ -1,7 +1,8 @@
 # Talk at the f-TALES workshop
 
 - f-TALES workshop: Big Data in Life Sciences and Biomedicine
-- When: 26 September 2018
+- 26 September 2018, 16:00 - 16:30 in the *Statistical methods for
+  omics data analysis* session.
 
 ## Title
 
