@@ -299,8 +299,8 @@
       us to a T Augmented Gaussian Mixture model (TAGM) .
 
     \item<+-> This methodology allows proteome-wide
-      \textbf{uncertainty quantification}, thus adding a further layer
-      to the analysis of spatial proteomics.
+      \textbf{uncertainty quantification} (Shannon entropy), thus
+      adding a further layer to the analysis of spatial proteomics.
 
   \end{itemize}
 \end{frame}
@@ -349,15 +349,15 @@
       \includegraphics[width=1\linewidth]{./figs_local/Q924C1-prob-1.pdf}
     }{
     \caption{\scriptsize \justifying Exportin 5 (Q924C1) forms part of
-      the micro-RNA export machinery of the nucleus, transporting
-      miRNA from the nucleus to the cytoplasm for further processing.
-      It then translocates back through the nuclear pore complex to
-      return to the nucleus to mediate further transport between
-      nucleus and cytoplasm. The model correctly infers that it most
-      likely localises to the cytosol but there is some uncertainty
-      with this assignment. This uncertainty is reflected in possible
-      assignment of Exportin 5 to the nucleus non-chromatin and
-      reflects the multi-location of the protein.}  }
+      the micro-RNA export machinery, transporting miRNA from the
+      nucleus to the cytoplasm for further processing.  It then
+      translocates back through the nuclear pore complex to return to
+      the nucleus to mediate further transport between nucleus and
+      cytoplasm. The model correctly infers that it most likely
+      localises to the cytosol but there is some uncertainty with this
+      assignment. This uncertainty is reflected in possible assignment
+      of Exportin 5 to the nucleus non-chromatin and reflects the
+      multi-location of the protein.}  }
     %% NOTE SVM failed to classify exportin 5 to any of the two
     %% biologically plausible locations, arguably due to the similarity
     %% of the cytosol and peroxysome, to which it got assigned.
@@ -365,16 +365,16 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{}
-  \begin{figure}
-    \centering
-    \includegraphics[width=.53\linewidth]{./figs_local/PCAP51863.pdf}
-    \includegraphics[width=.46\linewidth]{./figs_local/violinp51863.pdf}
-    \caption{V-ATPase subunit d1 (P51683) with uncertain localisation
-      between the endosome and lysosome.  }
-  \label{fig:bgmm}
-  \end{figure}
-\end{frame}
+%% \begin{frame}{}
+%%   \begin{figure}
+%%     \centering
+%%     \includegraphics[width=.53\linewidth]{./figs_local/PCAP51863.pdf}
+%%     \includegraphics[width=.46\linewidth]{./figs_local/violinp51863.pdf}
+%%     \caption{V-ATPase subunit d1 (P51863) with uncertain localisation
+%%       between the endosome and lysosome.  }
+%%   \label{fig:bgmm}
+%%   \end{figure}
+%% \end{frame}
 
 \subsubsection{Trans-localisation}
 
