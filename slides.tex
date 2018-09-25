@@ -1,0 +1,157 @@
+\documentclass[presentation]{beamer}
+
+\usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+% \usepackage{longtable}
+% \usepackage{tabu}
+\usepackage{makecell}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+% \usepackage{textcomp}
+% \usepackage{marvosym}
+% \usepackage{wasysym}
+% \usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{ragged2e}
+
+\usepackage{bm}
+
+\usepackage{amsmath,amssymb}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\bv}{\mathbf{v}}
+\newcommand{\bp}{\mathbf{p}}
+\newcommand{\bq}{\mathbf{q}}
+\newcommand{\by}{\mathbf{y}}
+
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbN}{\mathbb{N}}
+
+\newcommand{\bxi}{\bm{\xi}}
+\newcommand{\bal}{\bm{\alpha}}
+\newcommand{\bth}{\bm{\theta}}
+
+\usepackage{etoolbox}
+\let\bbordermatrix\bordermatrix
+\patchcmd{\bbordermatrix}{8.75}{4.75}{}{}
+\patchcmd{\bbordermatrix}{\left(}{\left[}{}{}
+\patchcmd{\bbordermatrix}{\right)}{\right]}{}{}
+
+\usepackage[authoryear, round]{natbib}
+
+\newcommand{\sidebysidecaption}[4]{%
+\RaggedRight%
+  \begin{minipage}[t]{#1}
+    \vspace*{0pt}
+    #3
+  \end{minipage}
+  \hfill%
+  \begin{minipage}[t]{#2}
+    \vspace*{0pt}
+    #4
+\end{minipage}%
+}
+
+%% colors
+\definecolor{Red}{rgb}{0.7,0,0}
+\definecolor{Blue}{rgb}{0,0,0.8}
+\definecolor{Green}{rgb}{0,0.8,0}
+\definecolor{Gray}{rgb}{0.8,0.8,0.8}
+\definecolor{Orange}{rgb}{1,.65,0}
+
+\usepackage{hyperref}
+\hypersetup{
+  hyperindex = {true},
+  colorlinks = {true},
+  linktocpage = {true},
+  plainpages = {false},
+  linkcolor = {Blue},
+  citecolor = {Blue},
+  urlcolor = {Red},
+  pdfstartview = {Fit},
+  pdfpagemode = {UseOutlines},
+  pdfview = {XYZ null null null},
+  pdfkeywords={proteomics, spatial, dynamics, integration, regulation, computational biology},
+  pdfsubject={Research talk},
+  pdfcreator={Laurent Gatto}}
+
+\date{26 September 2018, Gent}
+
+\title{
+  \textbf{Mapping the sub-cellular proteome}
+}
+
+\author{Laurent Gatto\\
+  \url{laurent.gatto@uclouvain.be} -- \url{@lgatt0}\\
+  de Duve Institute -- UCLouvain\\
+  \url{http://lgatto.github.io/about}\\
+  \bigskip
+  Slides: %%  \includegraphics[height=3mm]{./figs_local/zenodo1180393.png}\\
+  \url{TODO}
+}
+
+
+% \AtBeginSection[] % Do nothing for \section*
+% {
+%   \begin{frame}<beamer>
+%     \frametitle{Plan}
+%     \tableofcontents[currentsection]
+%   \end{frame}
+% }
+
+
+\begin{document}
+
+\maketitle
+
+% \begin{frame}{}
+%   Who?
+% \end{frame}
+
+
+\include{spatprot}
+
+\include{sw}
+
+
+\begin{frame}[allowframebreaks]{References}
+  \tiny
+  \bibliographystyle{plainnat}
+  \bibliography{spatial_proteomics,bib2}
+\end{frame}
+
+
+\begin{frame}
+  \begin{block}{Acknowledgements}
+    \begin{itemize}
+    \item \textbf{Mr Oliver Crook} and \textbf{Dr Lisa Breckels},
+      Computational Proteomics Unit, Cambridge (machine learning,
+      algorithms, software).
+    \item \textbf{Dr Sebastian Gibb} and \textbf{Dr Johannes Rainer}
+      (software).
+    \item \textbf{Prof Kathryn Lilley} \textit{et al.}, Cambridge
+      Centre of Proteomics and \textbf{Dr Claire Mulvey}, Cancer
+      Research UK Cambridge Institute (spatial proteomics)
+    \item \textbf{Funding}: BBSRC, Wellcome Trust
+    \end{itemize}
+  \end{block}
+
+
+
+  \begin{center}
+    Slides: \url{https://zenodo.org/record/1180393} \\
+
+    \bigskip
+    \textbf{Thank you for your attention}
+  \end{center}
+
+\end{frame}
+
+\include{add}
+
+\end{document}
